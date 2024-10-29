@@ -1,0 +1,88 @@
+/* Full-screen video background */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Baskerville, "Times New Roman", Times, serif;
+    overflow: hidden;
+}
+
+/* Container for video and overlay */
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Video styling */
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+/* Darker overlay to dim the video */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
+    z-index: 1;
+}
+
+/* Content styling */
+h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    z-index: 2;
+    font-size: clamp(1.5em, 4vw, 2.5em); /* Responsive font sizing */
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    border-radius: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+    transition: font-size 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+/* Wrapper for positioning */
+.button-wrapper {
+    position: relative;
+}
+
+/* Bottom-left button styling */
+.button-bottom-left {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 12px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJJT-NxmhaPIVpfPa5aVh31rv2ytDqtCq48g&s'); /* Set your texture image */
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgba(248, 248, 248, 0.8);
+    border-radius: 5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.3s;
+    text-align: center;
+    text-decoration: none;
+    z-index: 10; /* Ensure button is above other elements */
+}
+
+.button-bottom-left:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}

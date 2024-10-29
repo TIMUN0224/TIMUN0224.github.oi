@@ -1,0 +1,19 @@
+/* Brown Button Styling with Wood Texture */
+.brown-button {
+  position: absolute; /* Positioning the button */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  padding: 10px 20px;
+  background-image: url("https://img.freepik.com/premium-photo/green-leaves-texture-background_912214-4604.jpg"); /* URL of wood texture */
+  background-size: cover; /* Cover the entire button area */
+  color: rgb(0, 0, 0);
+  text-decoration: none; /* Remove underline */
+  font-size: 1em;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.brown-button:hover {
+  opacity: 0.9; /* Slight transparency effect on hover */
+}

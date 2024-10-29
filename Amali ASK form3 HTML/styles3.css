@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskerville&display=swap");
+
+body {
+  font-family: "Baskerville", serif; /* Menggunakan font Baskerville */
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  position: absolute; /* Membolehkan penempatan tepat */
+  background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/canadian-maple-leaf-texture-saint-lazare-design.jpg"); /* URL gambar tekstur daun */
+  background-size: cover; /* Menutupi keseluruhan butang */
+  color: hsl(0, 0%, 100%); /* Warna teks butang */
+  border: 2px solid rgb(250, 237, 54);
+  border-radius: 5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  padding: 10px 20px; /* Ruang dalam butang */
+  cursor: pointer; /* Menunjukkan kursor tangan apabila melayari */
+  border-radius: 5px; /* Sudut bulat */
+  text-decoration: none; /* Menghilangkan garis bawah pada pautan */
+  font-size: 16px; /* Saiz teks */
+  opacity: 0.9; /* Ketelusan butang */
+  transition: transform 0.3s; /* Transisi halus untuk hover */
+}
+
+.button:hover {
+  transform: scale(1.05); /* Membesarkan butang semasa hover */
+}

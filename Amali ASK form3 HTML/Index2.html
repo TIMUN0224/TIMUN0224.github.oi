@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman 2</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Background video styling */
+      video.bg-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -2; /* Send video behind overlay and other elements */
+      }
+      /* Dark overlay on video */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Darker overlay */
+        z-index: -1; /* Layer it above the video, below the content */
+      }
+      body {
+        font-family: "Baskerville", serif; /* Apply Baskerville font */
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        margin: 0; /* Remove margin for full-screen effect */
+        display: flex; /* Use flexbox */
+        flex-direction: column; /* Stack children vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        height: 100vh; /* Full viewport height */
+        position: relative; /* For positioning buttons */
+      }
+      h1 {
+        font-size: 48px; /* Increased font size */
+        color: #fff; /* White color for the heading */
+        text-align: center;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+      }
+      p {
+        font-size: 18px;
+        color: #ddd; /* Light gray color for the paragraph text */
+        padding: 15px;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.6
+        ); /* Darker semi-transparent background */
+        border: 1px solid #444;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center; /* Center the paragraph text */
+        width: 80%; /* Optional: set width */
+        max-width: 600px; /* Optional: max width for better readability */
+      }
+      /* Button styling */
+      .button {
+        position: fixed;
+        bottom: 30px; /* Distance from the bottom */
+        padding: 10px 20px; /* Padding for the button */
+        font-size: 16px; /* Font size */
+        color: #fff; /* Text color */
+        background-color: rgba(255, 255, 255, 0.8); /* Button color */
+        border: 2px solid rgb(255, 255, 255); /* Outline */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+        transition: background-color 0.3s, transform 0.2s; /* Smooth background and scale transition */
+        text-decoration: none; /* Remove underline from text */
+      }
+      .button-left {
+        left: 20px; /* Distance from the left */
+      }
+      .button-right {
+        right: 20px; /* Distance from the right */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Background Video -->
+    <video class="bg-video" autoplay loop muted>
+      <source
+        src="https://motionbgs.com/media/113/forest-stream.960x540.mp4"
+        type="video/mp4"
+      />
+    </video>
+
+    <h1>SOALAN</h1>
+    <p>
+      Syarikat FizzTech yang berasaskan ICT telah merekodkan projek ICT yang
+      diperolehi daripada menerusi tender melalui kaedah manual. Syarikat ini
+      behasrat merekodkan semua aktiviti projek syarikat menerusi kaedah sistem
+      pangkalan data. Anda dikehendaki menganalisa, merangka dan seterusnya
+      membina pangkalan data tersebut.
+    </p>
+
+    <!-- Buttons -->
+    <a href="Index.html" class="button button-left">Halaman Sebelum Ini</a>
+    <a href="Index3.html" class="button button-right">Halaman Seterusnya</a>
+    <!-- Css -->
+    <link rel="stylesheet" href="styles2.css" />
+    <script>
+      // Optional: Add any JavaScript functionality here if needed
+    </script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMALI ASK TINGKATAN 3</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Full-page video background */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Baskerville", serif; /* Use Baskerville font */
+      }
+
+      /* Video background styling */
+      .video-background {
+        position: fixed; /* Fixed position to cover the whole screen */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1; /* Behind all other content */
+      }
+
+      .video-background video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the video covers the area */
+      }
+
+      /* Center the entire content in the middle of the page */
+      .center-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+        padding: 20px;
+        border-radius: 10px;
+        position: relative; /* Ensures the content appears above the video */
+      }
+
+      /* Styling for the title */
+      .title {
+        font-size: 2em;
+        color: #fff;
+        text-align: center;
+      }
+
+      /* Center details text */
+      .details p {
+        font-size: 1.2em;
+        color: #fff;
+        text-align: center;
+        margin: 0.5em 0;
+      }
+
+      /* Red Button Styling */
+      .red-button {
+        display: inline-block;
+        padding: 15px 30px;
+        background-image: url("https://img.freepik.com/premium-photo/green-leaves-texture-background_912214-4604.jpg");
+        background-size: cover; /* Ensure the image covers the button */
+        color: #ffffff;
+        text-decoration: none; /* Remove underline */
+        font-size: 1em;
+        border-radius: 5px;
+        margin-top: 40px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        border: none; /* Remove border */
+      }
+
+      .red-button:hover {
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Optional: darker overlay on hover */
+      }
+
+      /* Purple Button Styling */
+      .purple-button {
+        position: absolute; /* Positioning the button */
+        bottom: 20px; /* Distance from the bottom */
+        right: 20px; /* Distance from the right */
+        display: inline-block; /* Ensures it behaves like a button */
+        padding: 10px 20px;
+        background-image: url("https://img.freepik.com/premium-photo/seamless-wood-texture-pattern-ideal-creative-design-projects_862489-51814.jpg?semt=ais_hybrid");
+        background-size: cover; /* Ensure the image covers the button */
+        color: #ffffff;
+        text-decoration: none; /* Remove underline */
+        font-size: 1em;
+        border-radius: 5px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        border: none; /* Remove border */
+      }
+
+      .purple-button:hover {
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Optional: darker overlay on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-background">
+      <video autoplay loop muted>
+        <source
+          src="https://motionbgs.com/media/1922/first-fall-day-in-forest.960x540.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+
+    <div class="center-container">
+      <header>
+        <h1 class="title">AMALI ASK TINGKATAN 3</h1>
+      </header>
+
+      <main>
+        <section class="details">
+          <p><strong>Tema:</strong> Membangun Pangkalan Data Hubungan</p>
+          <p>
+            <strong>Tajuk Soalan:</strong> Membangun Suatu Pangkalan Data Yang
+            Boleh Dijadikan Contoh Dan Dikongsi Bersama
+          </p>
+          <p><strong>Nama:</strong> Muhammad Nur Fahmie Bin Norizan</p>
+          <p><strong>Kelas:</strong> 3 Cempaka</p>
+        </section>
+
+        <a
+          href="https://drive.google.com/file/d/17z0KFNu1tierEwmmtnxiQ4HlN2--Rf5F/view?usp=drive_link"
+          target="_blank"
+          class="red-button"
+        >
+          <strong>Download Project Microsoft Access Saya</strong>
+        </a>
+
+        <!-- Purple Button -->
+        <a href="Index2.html" class="purple-button">Halaman Seterusnya</a>
+
+        <div class="animated-box"></div>
+      </main>
+
+      <footer>
+        <!-- Optional footer content -->
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
